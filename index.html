@@ -1,17 +1,17 @@
-```html
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kim Seulgi Portfolio</title>
+  <title>Kim Seulgi | AI Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header>
-  <nav>
-    <h2>Kim Seulgi</h2>
+<header class="header">
+  <div class="nav">
+    <div class="logo">Kim Seulgi</div>
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#education">Education</a></li>
@@ -20,172 +20,265 @@
       <li><a href="#experience">Experience</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-  </nav>
+  </div>
 </header>
 
 <section class="hero">
-  <div class="hero-text">
-    <p class="subtitle">AI Engineering Student Portfolio</p>
-    <h1>Kim Seulgi</h1>
-    <h3>Artificial Intelligence Engineering Student</h3>
-    <p>
-      인공지능공학을 전공하며 Computer Vision, Natural Language Processing,
-      Data Analysis, Multimodal AI 분야에 관심을 가지고 학습하고 있습니다.
-      향후 AI 서비스 개발자 또는 AI 연구자로 성장하는 것을 목표로 합니다.
+  <div class="hero-left">
+    <p class="eyebrow">AI Engineering Student Portfolio</p>
+    <h1>Building AI systems that understand vision, language, and data.</h1>
+    <p class="hero-desc">
+      조선대학교 인공지능공학과에 재학 중이며, Computer Vision, Vision-Language Models,
+      Natural Language Processing, Data Analysis 분야에 관심을 가지고 학습하고 있습니다.
     </p>
-    <div class="tags">
-      <span>Computer Vision</span>
-      <span>VLM</span>
-      <span>Deep Learning</span>
-      <span>Data Analysis</span>
+
+    <div class="hero-buttons">
+      <a href="#projects" class="primary-btn">View Projects</a>
+      <a href="./resume.pdf" class="secondary-btn">Download Resume</a>
+    </div>
+
+    <div class="quick-info">
+      <div>
+        <strong>Major</strong>
+        <span>Artificial Intelligence Engineering</span>
+      </div>
+      <div>
+        <strong>GPA</strong>
+        <span>4.239 / 4.5</span>
+      </div>
+      <div>
+        <strong>Focus</strong>
+        <span>Computer Vision · Multimodal AI</span>
+      </div>
     </div>
   </div>
 
-  <div class="hero-img">
-    <img src="profile.jpg" alt="Profile Photo" />
+  <div class="hero-right">
+    <div class="profile-card">
+      <img src="profile.jpg" alt="Kim Seulgi Profile Photo" />
+      <h2>Kim Seulgi</h2>
+      <p>AI Engineering Student</p>
+      <div class="profile-tags">
+        <span>VLM</span>
+        <span>CV</span>
+        <span>NLP</span>
+        <span>Data</span>
+      </div>
+    </div>
   </div>
 </section>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    저는 조선대학교 인공지능공학과에 재학 중이며, AI 모델을 활용해 실제 문제를 해결하는 과정에 관심이 있습니다.
-    현재 Python, Deep Learning, Computer Vision, Vision-Language Model, 데이터 분석 기술을 중심으로 학습하고 있습니다.
-  </p>
-  <p>
-    AI 분야에서는 특히 이미지와 텍스트를 함께 이해하는 멀티모달 AI, 객체 탐지, 감정 분석,
-    그리고 Vision-Language Model의 hallucination 문제에 관심이 있습니다.
-  </p>
+<main>
+
+<section id="about" class="section">
+  <div class="section-title">
+    <p>01</p>
+    <h2>About Me</h2>
+  </div>
+  <div class="content-card">
+    <p>
+      저는 인공지능 기술을 단순히 이론으로만 학습하는 것이 아니라, 실제 데이터를 분석하고
+      모델을 구현하며 문제를 해결하는 과정에 관심이 있습니다.
+    </p>
+    <p>
+      현재 Python, Deep Learning, Computer Vision, Vision-Language Model, NLP 기반 감정 분석을
+      중심으로 학습하고 있으며, AI 분야에서는 특히 멀티모달 AI와 hallucination 문제에 관심이 있습니다.
+    </p>
+  </div>
 </section>
 
-<section id="education">
-  <h2>Education</h2>
-  <div class="box">
+<section id="education" class="section">
+  <div class="section-title">
+    <p>02</p>
+    <h2>Education</h2>
+  </div>
+  <div class="content-card highlight-card">
     <h3>Chosun University</h3>
-    <p>Department of Artificial Intelligence Engineering</p>
-    <ul>
-      <li>Year: 3rd year</li>
-      <li>Period: 2024.03 ~ Present</li>
-      <li>Relevant Coursework: Machine Learning, Deep Learning, Data Structures, Computer Vision, Signals and Systems</li>
-      <li>GPA: 4.239 / 4.5</li>
-    </ul>
+    <p class="sub-text">Department of Artificial Intelligence Engineering</p>
+    <div class="info-grid">
+      <div><span>Year</span><strong>3rd year</strong></div>
+      <div><span>Period</span><strong>2024.03 ~ Present</strong></div>
+      <div><span>GPA</span><strong>4.239 / 4.5</strong></div>
+      <div><span>Coursework</span><strong>Machine Learning, Deep Learning, Data Structures, Computer Vision, Signals and Systems</strong></div>
+    </div>
   </div>
 </section>
 
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="grid">
-    <div class="card">
+<section id="skills" class="section">
+  <div class="section-title">
+    <p>03</p>
+    <h2>Skills</h2>
+  </div>
+
+  <div class="skill-grid">
+    <div class="skill-card">
       <h3>Programming</h3>
-      <p>Python: Intermediate</p>
-      <p>C/C++: Basic</p>
-      <p>JavaScript: Basic</p>
+      <ul>
+        <li><span>Python</span><b>Intermediate</b></li>
+        <li><span>C / C++</span><b>Basic</b></li>
+        <li><span>JavaScript</span><b>Basic</b></li>
+      </ul>
     </div>
-    <div class="card">
+
+    <div class="skill-card">
       <h3>AI / ML</h3>
-      <p>PyTorch: Basic</p>
-      <p>scikit-learn: Basic</p>
-      <p>Computer Vision: Basic</p>
-      <p>Vision-Language Model: Basic</p>
+      <ul>
+        <li><span>PyTorch</span><b>Intermediate</b></li>
+        <li><span>Computer Vision</span><b>Intermediate</b></li>
+        <li><span>Vision-Language Models</span><b>Intermediate</b></li>
+        <li><span>scikit-learn</span><b>Basic</b></li>
+      </ul>
     </div>
-    <div class="card">
-      <h3>Web / Tools</h3>
-      <p>HTML / CSS: Basic</p>
-      <p>Git / GitHub: Basic</p>
-      <p>VS Code: Intermediate</p>
-      <p>Google Colab: Intermediate</p>
+
+    <div class="skill-card">
+      <h3>Tools</h3>
+      <ul>
+        <li><span>Git / GitHub</span><b>Basic</b></li>
+        <li><span>VS Code</span><b>Intermediate</b></li>
+        <li><span>Google Colab</span><b>Intermediate</b></li>
+        <li><span>HTML / CSS</span><b>Basic</b></li>
+      </ul>
     </div>
   </div>
 </section>
 
-<section id="projects">
-  <h2>Projects</h2>
-
-  <div class="project">
-    <h3>Vision-Language Model Hallucination Mitigation</h3>
-    <p><b>Summary:</b> VLM의 객체 환각 및 위치 환각 문제를 줄이기 위한 연구 프로젝트</p>
-    <p><b>Period:</b> 2026</p>
-    <p><b>Tech Stack:</b> Python, PyTorch, Qwen2.5-VL, YOLOv11, COCO, GQA</p>
-    <p><b>Role:</b> 실험 설계, 모델 실행, 성능 평가, 결과 분석</p>
-    <ul>
-      <li>Detector-guided Prompting 적용</li>
-      <li>Rulecheck 기반 출력 검증</li>
-      <li>CHAIR, POPE, GQA 지표를 활용한 성능 평가</li>
-    </ul>
+<section id="projects" class="section">
+  <div class="section-title">
+    <p>04</p>
+    <h2>Projects</h2>
   </div>
 
-  <div class="project">
-    <h3>Sentiment Analysis Research</h3>
-    <p><b>Summary:</b> 텍스트 데이터를 활용하여 감정을 분류하고 분석하는 연구</p>
-    <p><b>Tech Stack:</b> Python, NLP, Machine Learning, Deep Learning</p>
-    <p><b>Role:</b> 데이터 전처리, 모델 학습, 결과 분석</p>
-    <ul>
-      <li>텍스트 데이터 전처리 및 특징 추출</li>
-      <li>감정 분류 모델 실험</li>
-      <li>분류 결과 분석 및 성능 비교</li>
-    </ul>
-  </div>
+  <div class="project-list">
+    <article class="project-card main-project">
+      <div class="project-top">
+        <span class="badge">Research Project</span>
+        <span>2026</span>
+      </div>
+      <h3>Vision-Language Model Hallucination Mitigation</h3>
+      <p>
+        Qwen2.5-VL과 YOLOv11을 활용하여 Vision-Language Model의 객체 환각 및 위치 환각 문제를
+        줄이기 위한 연구 프로젝트입니다.
+      </p>
+      <div class="project-detail">
+        <p><b>Tech Stack</b> Python, PyTorch, Qwen2.5-VL, YOLOv11, COCO, GQA</p>
+        <p><b>Role</b> 실험 설계, 모델 실행, 성능 평가, 결과 분석</p>
+        <p><b>Evaluation</b> CHAIR, POPE, GQA</p>
+      </div>
+      <div class="chips">
+        <span>Detector-guided Prompting</span>
+        <span>Rulecheck</span>
+        <span>CGV</span>
+        <span>Multimodal AI</span>
+      </div>
+    </article>
 
-  <div class="project">
-    <h3>DACON AI Competition</h3>
-    <p><b>Summary:</b> 데이콘 AI 경진대회에 참가하여 데이터 분석 및 모델링 경험을 쌓은 프로젝트</p>
-    <p><b>Tech Stack:</b> Python, Pandas, scikit-learn, Deep Learning</p>
-    <p><b>Role:</b> 데이터 분석, 베이스라인 코드 실행, 모델 개선 실험</p>
-    <ul>
-      <li>대회 데이터 구조 파악</li>
-      <li>베이스라인 모델 실행 및 제출 파일 생성</li>
-      <li>성능 향상을 위한 실험 진행</li>
-    </ul>
+    <article class="project-card">
+      <div class="project-top">
+        <span class="badge">NLP Project</span>
+      </div>
+      <h3>Sentiment Analysis Research</h3>
+      <p>
+        텍스트 데이터를 활용하여 감정을 분류하고 분석하는 연구 프로젝트입니다.
+        데이터 전처리, 감정 분류 모델 실험, 결과 분석 과정을 수행했습니다.
+      </p>
+      <div class="chips">
+        <span>Python</span>
+        <span>NLP</span>
+        <span>Machine Learning</span>
+        <span>Text Analysis</span>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top">
+        <span class="badge">Competition</span>
+      </div>
+      <h3>DACON AI Competition</h3>
+      <p>
+        데이콘 AI 경진대회에 참가하여 데이터 구조 파악, 베이스라인 코드 실행,
+        모델 개선 실험 및 제출 파일 생성 과정을 경험했습니다.
+      </p>
+      <div class="chips">
+        <span>Data Analysis</span>
+        <span>Pandas</span>
+        <span>scikit-learn</span>
+        <span>Deep Learning</span>
+      </div>
+    </article>
   </div>
 </section>
 
-<section id="experience">
-  <h2>Experience</h2>
+<section id="experience" class="section">
+  <div class="section-title">
+    <p>05</p>
+    <h2>Experience</h2>
+  </div>
+
   <div class="timeline">
-    <div>
-      <h3>AI Lab Undergraduate Intern</h3>
-      <p>연구실 인턴으로 활동하며 AI 연구 주제 탐색, 논문 분석, 실험 과정에 참여했습니다.</p>
+    <div class="timeline-item">
+      <span></span>
+      <div>
+        <h3>AI Lab Undergraduate Intern</h3>
+        <p>연구실 인턴으로 활동하며 AI 연구 주제 탐색, 논문 분석, 실험 과정에 참여했습니다.</p>
+      </div>
     </div>
-    <div>
-      <h3>Club Activity</h3>
-      <p>동아리 활동을 통해 전공 학습, 팀 활동, 프로젝트 경험을 쌓았습니다.</p>
+
+    <div class="timeline-item">
+      <span></span>
+      <div>
+        <h3>DACON AI Competition Participant</h3>
+        <p>AI 경진대회에 참가하여 데이터 분석과 모델링 과정을 경험했습니다.</p>
+      </div>
     </div>
-    <div>
-      <h3>AI Digital Media Individual Project</h3>
-      <p>AI 디지털미디어 수업에서 개인 프로젝트를 수행하며 주제 선정, 자료 조사, 결과 정리를 진행했습니다.</p>
+
+    <div class="timeline-item">
+      <span></span>
+      <div>
+        <h3>Academic Club Member</h3>
+        <p>동아리 활동을 통해 전공 학습, 팀 활동, 프로젝트 경험을 쌓았습니다.</p>
+      </div>
     </div>
-    <div>
-      <h3>Personal AI Study</h3>
-      <p>Python, Deep Learning, Computer Vision, VLM 관련 내용을 꾸준히 학습하고 있습니다.</p>
+
+    <div class="timeline-item">
+      <span></span>
+      <div>
+        <h3>AI Digital Media Individual Project</h3>
+        <p>AI 디지털미디어 수업에서 개인 프로젝트를 수행하며 주제 선정, 자료 조사, 결과 정리를 진행했습니다.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="resume">
-  <h2>CV / Resume</h2>
-  <p>
-    <a class="btn" href="./resume.pdf">Download My Resume</a>
-  </p>
+<section id="career" class="section">
+  <div class="section-title">
+    <p>06</p>
+    <h2>Career Goal</h2>
+  </div>
+  <div class="career-grid">
+    <div>AI Developer</div>
+    <div>Computer Vision Engineer</div>
+    <div>Multimodal AI Researcher</div>
+    <div>Graduate School / Research Track</div>
+  </div>
 </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: ksg040324@chosun.ac.kr</p>
-  <p>GitHub: <a href="https://github.com/ksg20243324">https://github.com/ksg20243324</a></p>
+<section id="contact" class="section contact-section">
+  <div>
+    <div class="section-title">
+      <p>07</p>
+      <h2>Contact</h2>
+    </div>
+    <p>Email: <a href="mailto:ksg040324@chosun.ac.kr">ksg040324@chosun.ac.kr</a></p>
+    <p>GitHub: <a href="https://github.com/ksg20243324">github.com/ksg20243324</a></p>
+  </div>
+
+  <a class="resume-btn" href="./resume.pdf">Download Resume</a>
 </section>
 
-<section id="career">
-  <h2>Career Goal</h2>
-  <ul>
-    <li>AI Developer</li>
-    <li>Computer Vision Engineer</li>
-    <li>Data Scientist</li>
-    <li>Graduate School / Research Track</li>
-  </ul>
-</section>
+</main>
 
 <footer>
-  <p>© 2026 Kim Seulgi. All Rights Reserved.</p>
+  <p>© 2026 Kim Seulgi. Designed for AI Portfolio.</p>
 </footer>
 
 </body>
